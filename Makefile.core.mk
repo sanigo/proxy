@@ -16,7 +16,7 @@ TOP := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
 SHELL := /bin/bash
 BAZEL_STARTUP_ARGS ?=
-BAZEL_BUILD_ARGS ?= --config=opt --override_repository=envoy=/opt/golang/src/envoy --host_javabase=@local_jdk//:jdk
+BAZEL_BUILD_ARGS ?= -c opt --override_repository=envoy=/opt/golang/src/envoy --host_javabase=@local_jdk//:jdk
 
 BAZEL_TARGETS ?= //...
 # Don't build Debian packages and Docker images in tests.
