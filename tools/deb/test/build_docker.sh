@@ -33,7 +33,7 @@ DOCKER_IMAGE=${DOCKER_IMAGE:-$IMAGE_NAME}
 
 BAZEL_TARGET="bazel-bin/tools/deb/"
 
-cp -f $BAZEL_TARGET/istio-proxy_*_amd64.deb tools/deb/test/istio-proxy_amd64.deb
+cp -f $BAZEL_TARGET/istio-proxy_*_arm64.deb tools/deb/test/istio-proxy_arm64.deb
 docker build -f tools/deb/test/Dockerfile -t "${DOCKER_IMAGE}" tools/deb/test
 
 

@@ -41,7 +41,7 @@ pkg_tar(
 
 pkg_deb(
     name = "istio-proxy",
-    architecture = "amd64",
+    architecture = "arm64",
     built_using = "bazel",
     conffiles_file = "conffiles",
     data = ":debian-data",
