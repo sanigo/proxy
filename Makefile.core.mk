@@ -16,7 +16,7 @@ TOP := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
 SHELL := /bin/bash
 BAZEL_STARTUP_ARGS ?=
-BAZEL_BUILD_ARGS ?=
+BAZEL_BUILD_ARGS ?= --override_repository=envoy=/opt/golang/src/envoy --host_javabase=@local_jdk//:jdk -c opt
 BAZEL_TARGETS ?= //...
 HUB ?=
 TAG ?=

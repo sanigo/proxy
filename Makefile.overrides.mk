@@ -14,3 +14,4 @@
 
 # this repo is not on the container plan by default
 BUILD_WITH_CONTAINER ?= 0
+export BUILDINFO=$(shell echo `pwd`/build_info)
