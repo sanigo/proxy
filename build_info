@@ -1,5 +1,5 @@
 istio.io/pkg/version.buildVersion=1.4.7
-istio.io/pkg/version.buildGitRevision=aa4789a209d4a0cc43ef09f20f07d0b48ddaf4fc-dirty
-istio.io/pkg/version.buildStatus=Modified
+istio.io/pkg/version.buildGitRevision=221a15161a60b050f02b3129fc635eb4b925a3e9
+istio.io/pkg/version.buildStatus=Clean
 istio.io/pkg/version.buildTag=1.4.7
 istio.io/pkg/version.buildHub=
